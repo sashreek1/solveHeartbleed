@@ -4,11 +4,12 @@
     name: "{{item}}"
     state: restarted
   with_items:
-  - apache2
+  - httpd
   - nginx
-  - postgresql-11
+  - postgresql
   - php5-fpm
   - postfix
   - openvpn
   - unbound
   - monit
+  failed_when: false
