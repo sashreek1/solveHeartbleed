@@ -1,0 +1,14 @@
+---
+- name: restarting the required services
+  service:
+    name: "{{item}}"
+    state: restarted
+  with_items:
+  - apache2
+  - nginx
+  - postgresql-11
+  - php5-fpm
+  - postfix
+  - openvpn
+  - unbound
+  - monit

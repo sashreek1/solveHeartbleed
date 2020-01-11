@@ -1,0 +1,7 @@
+---
+- name: checking for vulnerability
+  shell: lsof -n | grep ssl | grep DEL | wc -l
+  register: out
+
+- debug: msg="{{ out.stdout }}"
+

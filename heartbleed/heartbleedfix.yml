@@ -1,0 +1,7 @@
+---
+- hosts: localhost
+  roles:
+    - role: update_openssl
+    - role: check_vuln
+    - role: restart_services
+
