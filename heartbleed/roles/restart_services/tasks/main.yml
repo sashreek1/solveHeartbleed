@@ -7,7 +7,7 @@
   - httpd
   - nginx
   - postgresql
-  - php5-fpm
+  - php-fpm
   - postfix
   - openvpn
   - unbound
